@@ -12,7 +12,7 @@
 // "<div><div><span></span></div></h1>" =>  False
 
 
-// 2 different implementations, can either be run with node from terminal or the last function can be run using the browsers js console.
+// 2 different implementations, can either be run with node(remember to npm install)from terminal or the last function can be run using the browsers js console.
 
 const jsdom = require('jsdom').JSDOM;
 // const isHtml = require('is-html');
