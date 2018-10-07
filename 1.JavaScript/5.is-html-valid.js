@@ -42,9 +42,9 @@ console.log(isHTMLValid(test5));
 
 // // run below in Browser
 // function isHTMLValid(html) {
-//     var doc = document.createElement('div');
-//     doc.innerHTML = html;
-//     return(doc.innerHTML === html);
+//     var myDoc = document.createElement('div');
+//     myDoc.innerHTML = html;
+//     return(myDoc.innerHTML === html);
 // }
 
 // console.log(isHTMLValid("<div></div>"));
