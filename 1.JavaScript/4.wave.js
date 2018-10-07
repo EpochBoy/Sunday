@@ -8,4 +8,26 @@
 // wave("hello") => ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
 // wave (" h e y ") => [" H e y ", " h E y ", " h e Y "]
 // wave ("") => []
-function wave(str) {}
+// export function wave(str:string) {
+var wave = function (inp) {
+    var result = [];
+    var inpSplit = inp.split("");
+    var inpLength = inpSplit.length;
+    for (var i = 0; i < inpLength; i++) {
+        if (inp[i] === " ")
+            continue;
+        var copy = inpSplit.slice(0);
+        copy[i] = copy[i].toUpperCase();
+        result.push(copy.join(""));
+    }
+    return result;
+};
+var result1 = wave("hello");
+// var result2 = wave(" h e y ");
+// var result3 = wave("");
+console.log(result1);
+// console.log(result2);
+// console.log(result3);
+// console.log(result1, (result1[0] === "Hello" && result1[1] === "hEllo" && result1[2] === "heLlo" && result1[3] === "helLo" && result1[4] === "hellO"));
+// console.log(result2, (result2[0] === " H e y " && result2[1] === " h E y " && result2[2] === " h e Y "));
+// console.log(result3, result3.length === 0);
